@@ -2,7 +2,7 @@ ARG BASE_IMAGE
 ARG BUILD_IMAGE
 
 FROM ${BUILD_IMAGE} AS fabconnect-builder
-RUN apk add make
+RUN apt install make
 ADD . /fabconnect
 WORKDIR /fabconnect
 RUN mkdir /.cache \
@@ -13,17 +13,18 @@ RUN make
 FROM alpine:3.19 AS SBOM
 WORKDIR /
 COPY . /SBOM
-RUN apk add --no-cache curl
-RUN curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin v0.48.3
-RUN trivy fs --format spdx-json --output /sbom.spdx.json /SBOM
-RUN trivy sbom /sbom.spdx.json --severity UNKNOWN,HIGH,CRITICAL --exit-code 1 --ignorefile /SBOM/.trivyignore
+RUN apk add --no-cache curl \
+    && curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin latest \
+	&& trivy fs --format spdx-json --output /sbom.spdx.json /SBOM \
+    && trivy sbom /sbom.spdx.json --severity UNKNOWN,HIGH,CRITICAL --exit-code 1
 
 FROM $BASE_IMAGE
-RUN apk add curl
 WORKDIR /fabconnect
-COPY --from=fabconnect-builder /fabconnect/fabconnect ./
+RUN chgrp -R 0 /fabconnect/ \
+    && chmod -R g+rwX /fabconnect/
+COPY --from=fabconnect-builder --chown=1001:0  /fabconnect/fabconnect ./
 ADD ./openapi ./openapi/
 RUN ln -s /fabconnect/fabconnect /usr/bin/fabconnect
 COPY --from=SBOM /sbom.spdx.json /sbom.spdx.json
-COPY --from=SBOM /SBOM/.trivyignore /.trivyignore
+USER 1001
 ENTRYPOINT [ "fabconnect" ]
