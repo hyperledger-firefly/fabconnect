@@ -71,7 +71,7 @@ func (w *webhookAction) attemptBatch(_, attempt uint64, events []*api.EventEntry
 	}
 	if w.es.isAddressUnsafe(addr) {
 		err := errors.Errorf(errors.EventStreamsWebhookProhibitedAddress, u.Hostname())
-		log.Errorf(err.Error())
+		log.Error(err.Error())
 		return err
 	}
 	// Set the timeout

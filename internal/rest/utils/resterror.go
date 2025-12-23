@@ -16,7 +16,7 @@
 
 package util
 
-import "fmt"
+import "errors"
 
 type RestError struct {
 	Error      error
@@ -29,7 +29,7 @@ func NewRestError(msg string, code ...int) *RestError {
 		statusCode = code[0]
 	}
 	return &RestError{
-		Error:      fmt.Errorf(msg),
+		Error:      errors.New(string(msg)),
 		StatusCode: statusCode,
 	}
 }
