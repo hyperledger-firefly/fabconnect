@@ -29,7 +29,7 @@ func NewRestError(msg string, code ...int) *RestError {
 		statusCode = code[0]
 	}
 	return &RestError{
-		Error:      fmt.Errorf(msg),
+		Error:      fmt.Errorf("%s", msg),
 		StatusCode: statusCode,
 	}
 }
