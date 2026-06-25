@@ -25,8 +25,8 @@ import (
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/core"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/hyperledger/fabric-sdk-go/pkg/fabsdk"
-	"github.com/hyperledger/firefly-fabconnect/internal/errors"
-	"github.com/hyperledger/firefly-fabconnect/internal/fabric/utils"
+	"github.com/hyperledger-firefly/fabconnect/internal/errors"
+	"github.com/hyperledger-firefly/fabconnect/internal/fabric/utils"
 )
 
 // defined to allow mocking in tests

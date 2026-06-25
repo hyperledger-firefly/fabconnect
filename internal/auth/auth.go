@@ -19,8 +19,8 @@ package auth
 import (
 	"context"
 
-	internalErrors "github.com/hyperledger/firefly-fabconnect/internal/errors"
-	"github.com/hyperledger/firefly-fabconnect/pkg/plugins"
+	internalErrors "github.com/hyperledger-firefly/fabconnect/internal/errors"
+	"github.com/hyperledger-firefly/fabconnect/pkg/plugins"
 )
 
 type ContextKey int

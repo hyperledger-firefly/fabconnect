@@ -21,8 +21,8 @@ import (
 	"crypto/x509"
 	"os"
 
-	"github.com/hyperledger/firefly-fabconnect/internal/conf"
-	"github.com/hyperledger/firefly-fabconnect/internal/errors"
+	"github.com/hyperledger-firefly/fabconnect/internal/conf"
+	"github.com/hyperledger-firefly/fabconnect/internal/errors"
 	log "github.com/sirupsen/logrus"
 )
 

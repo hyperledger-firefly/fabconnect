@@ -17,7 +17,7 @@ package events
 import (
 	"testing"
 
-	"github.com/hyperledger/firefly-fabconnect/internal/events/api"
+	"github.com/hyperledger-firefly/fabconnect/internal/events/api"
 
 	"github.com/stretchr/testify/assert"
 )

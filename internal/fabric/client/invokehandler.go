@@ -21,7 +21,7 @@ import (
 	"github.com/hyperledger/fabric-sdk-go/pkg/client/channel/invoke"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/errors/status"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/hyperledger/firefly-fabconnect/internal/errors"
+	"github.com/hyperledger-firefly/fabconnect/internal/errors"
 )
 
 // adapted from the CommitHandler in https://github.com/hyperledger/fabric-sdk-go

@@ -19,9 +19,9 @@ package client
 import (
 	"github.com/hyperledger/fabric-sdk-go/pkg/core/config"
 	"github.com/hyperledger/fabric-sdk-go/pkg/fabsdk"
-	"github.com/hyperledger/firefly-fabconnect/internal/conf"
-	"github.com/hyperledger/firefly-fabconnect/internal/errors"
-	"github.com/hyperledger/firefly-fabconnect/internal/rest/identity"
+	"github.com/hyperledger-firefly/fabconnect/internal/conf"
+	"github.com/hyperledger-firefly/fabconnect/internal/errors"
+	"github.com/hyperledger-firefly/fabconnect/internal/rest/identity"
 	log "github.com/sirupsen/logrus"
 )
 

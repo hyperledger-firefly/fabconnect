@@ -23,7 +23,7 @@ import (
 	"path"
 	"strings"
 
-	config "github.com/hyperledger/firefly-fabconnect/internal/conf"
+	config "github.com/hyperledger-firefly/fabconnect/internal/conf"
 )
 
 func Setup() (string, *config.RESTGatewayConf) {

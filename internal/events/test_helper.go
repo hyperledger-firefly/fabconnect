@@ -23,11 +23,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hyperledger/firefly-fabconnect/internal/conf"
-	eventsapi "github.com/hyperledger/firefly-fabconnect/internal/events/api"
-	"github.com/hyperledger/firefly-fabconnect/internal/fabric/test"
-	"github.com/hyperledger/firefly-fabconnect/internal/kvstore"
-	mockkvstore "github.com/hyperledger/firefly-fabconnect/mocks/kvstore"
+	"github.com/hyperledger-firefly/fabconnect/internal/conf"
+	eventsapi "github.com/hyperledger-firefly/fabconnect/internal/events/api"
+	"github.com/hyperledger-firefly/fabconnect/internal/fabric/test"
+	"github.com/hyperledger-firefly/fabconnect/internal/kvstore"
+	mockkvstore "github.com/hyperledger-firefly/fabconnect/mocks/kvstore"
 	"github.com/stretchr/testify/mock"
 	"github.com/syndtr/goleveldb/leveldb"
 )

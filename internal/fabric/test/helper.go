@@ -21,8 +21,8 @@ import (
 	"github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
 	eventmocks "github.com/hyperledger/fabric-sdk-go/pkg/fab/events/service/mocks"
-	"github.com/hyperledger/firefly-fabconnect/internal/fabric/utils"
-	mockfabric "github.com/hyperledger/firefly-fabconnect/mocks/fabric/client"
+	"github.com/hyperledger-firefly/fabconnect/internal/fabric/utils"
+	mockfabric "github.com/hyperledger-firefly/fabconnect/mocks/fabric/client"
 	"github.com/stretchr/testify/mock"
 )
 

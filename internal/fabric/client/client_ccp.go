@@ -29,7 +29,7 @@ import (
 	"github.com/hyperledger/fabric-sdk-go/pkg/core/cryptosuite"
 	"github.com/hyperledger/fabric-sdk-go/pkg/fabsdk"
 	mspImpl "github.com/hyperledger/fabric-sdk-go/pkg/msp"
-	"github.com/hyperledger/firefly-fabconnect/internal/errors"
+	"github.com/hyperledger-firefly/fabconnect/internal/errors"
 	log "github.com/sirupsen/logrus"
 )
 

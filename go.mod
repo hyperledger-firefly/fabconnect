@@ -1,4 +1,4 @@
-module github.com/hyperledger/firefly-fabconnect
+module github.com/hyperledger-firefly/fabconnect
 
 go 1.23.0
 

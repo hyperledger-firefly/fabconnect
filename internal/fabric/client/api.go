@@ -21,8 +21,8 @@ import (
 	"github.com/hyperledger/fabric-sdk-go/pkg/client/event"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/msp"
-	eventsapi "github.com/hyperledger/firefly-fabconnect/internal/events/api"
-	"github.com/hyperledger/firefly-fabconnect/internal/fabric/utils"
+	eventsapi "github.com/hyperledger-firefly/fabconnect/internal/events/api"
+	"github.com/hyperledger-firefly/fabconnect/internal/fabric/utils"
 )
 
 type ChaincodeSpec struct {

@@ -25,9 +25,9 @@ import (
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/msp"
 	"github.com/hyperledger/fabric-sdk-go/pkg/fabsdk"
-	"github.com/hyperledger/firefly-fabconnect/internal/errors"
-	eventsapi "github.com/hyperledger/firefly-fabconnect/internal/events/api"
-	"github.com/hyperledger/firefly-fabconnect/internal/fabric/utils"
+	"github.com/hyperledger-firefly/fabconnect/internal/errors"
+	eventsapi "github.com/hyperledger-firefly/fabconnect/internal/events/api"
+	"github.com/hyperledger-firefly/fabconnect/internal/fabric/utils"
 	log "github.com/sirupsen/logrus"
 )
 

@@ -21,7 +21,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/hyperledger/firefly-fabconnect/internal/rest/test"
+	"github.com/hyperledger-firefly/fabconnect/internal/rest/test"
 	"github.com/spf13/cobra"
 
 	"github.com/stretchr/testify/assert"

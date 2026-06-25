@@ -21,26 +21,26 @@ jobs:
             --label tag=${GITHUB_REF##*/} \
             --build-arg BASE_IMAGE=alpine:3.19 \
             --build-arg BUILD_IMAGE=golang:1.23-alpine3.19 \
-            --tag ghcr.io/hyperledger/firefly-fabconnect:${GITHUB_REF##*/} \
-            --tag ghcr.io/hyperledger/firefly-fabconnect:head \
+            --tag ghcr.io/hyperledger-firefly/fabconnect:${GITHUB_REF##*/} \
+            --tag ghcr.io/hyperledger-firefly/fabconnect:head \
             .
 
       - name: Tag release
         if: github.event.action == 'released'
-        run: docker tag ghcr.io/hyperledger/firefly-fabconnect:${GITHUB_REF##*/} ghcr.io/hyperledger/firefly-fabconnect:latest
+        run: docker tag ghcr.io/hyperledger-firefly/fabconnect:${GITHUB_REF##*/} ghcr.io/hyperledger-firefly/fabconnect:latest
 
       - name: Push docker image
         run: |
           echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
-          docker push ghcr.io/hyperledger/firefly-fabconnect:${GITHUB_REF##*/}
+          docker push ghcr.io/hyperledger-firefly/fabconnect:${GITHUB_REF##*/}
 
       - name: Push head tag
         run: |
           echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
-          docker push ghcr.io/hyperledger/firefly-fabconnect:head
+          docker push ghcr.io/hyperledger-firefly/fabconnect:head
 
       - name: Push latest tag
         if: github.event.action == 'released'
         run: |
           echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
-          docker push ghcr.io/hyperledger/firefly-fabconnect:latest
+          docker push ghcr.io/hyperledger-firefly/fabconnect:latest

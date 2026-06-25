@@ -86,7 +86,7 @@ networks:
 services:
     fabconnect_0:
         container_name: firefly_fabconnect_0
-        image: ghcr.io/hyperledger/firefly-fabconnect:latest
+        image: ghcr.io/hyperledger-firefly/fabconnect:latest
         command: -f /fabconnect/fabconnect.yaml
         volumes:
             - fabconnect_receipts_0:/fabconnect/receipts
@@ -280,7 +280,7 @@ cd $HOME
 
 Download the fabconnect repository
 ```bash
-git clone https://github.com/hyperledger/firefly-fabconnect.git
+git clone https://github.com/hyperledger-firefly/fabconnect.git
 ```
 
 Compile fabconnect
@@ -570,8 +570,8 @@ As a result, the client should respond with a JSON similar to this:
  ```
 ## Documentation <a name="doc"></a>
 
-- [FireFly Fabconnect - Github](https://github.com/hyperledger/firefly-fabconnect)
-- [FireFly Cli - Github](https://github.com/hyperledger/firefly-cli/)
-- [Firefly - Doc](https://hyperledger.github.io/firefly/)
+- [FireFly Fabconnect - Github](https://github.com/hyperledger-firefly/fabconnect)
+- [FireFly Cli - Github](https://github.com/hyperledger-firefly/cli/)
+- [Firefly - Doc](https://hyperledger-firefly.github.io/firefly/)
 
 ## Troubleshooting <a name="troubleshooting"></a>

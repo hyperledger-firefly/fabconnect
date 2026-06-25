@@ -19,11 +19,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hyperledger/firefly-fabconnect/internal/messages"
-	"github.com/hyperledger/firefly-fabconnect/internal/rest/test"
-	"github.com/hyperledger/firefly-fabconnect/internal/utils"
-	mockreceiptapi "github.com/hyperledger/firefly-fabconnect/mocks/rest/receipt/api"
-	mockws "github.com/hyperledger/firefly-fabconnect/mocks/ws"
+	"github.com/hyperledger-firefly/fabconnect/internal/messages"
+	"github.com/hyperledger-firefly/fabconnect/internal/rest/test"
+	"github.com/hyperledger-firefly/fabconnect/internal/utils"
+	mockreceiptapi "github.com/hyperledger-firefly/fabconnect/mocks/rest/receipt/api"
+	mockws "github.com/hyperledger-firefly/fabconnect/mocks/ws"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )
