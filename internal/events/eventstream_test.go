@@ -23,11 +23,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/firefly-fabconnect/internal/conf"
-	eventsapi "github.com/hyperledger/firefly-fabconnect/internal/events/api"
-	"github.com/hyperledger/firefly-fabconnect/internal/kvstore"
-	mockfabric "github.com/hyperledger/firefly-fabconnect/mocks/fabric/client"
-	mockkvstore "github.com/hyperledger/firefly-fabconnect/mocks/kvstore"
+	"github.com/hyperledger-firefly/fabconnect/internal/conf"
+	eventsapi "github.com/hyperledger-firefly/fabconnect/internal/events/api"
+	"github.com/hyperledger-firefly/fabconnect/internal/kvstore"
+	mockfabric "github.com/hyperledger-firefly/fabconnect/mocks/fabric/client"
+	mockkvstore "github.com/hyperledger-firefly/fabconnect/mocks/kvstore"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

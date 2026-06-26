@@ -19,7 +19,7 @@ coverage: test coverage.html
 lint: ${LINT}
 		GOGC=20 $(LINT) run -v --timeout 5m
 ${LINT}:
-		$(VGO) install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.55.2
+		$(VGO) install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@v2.12.2
 firefly-fabconnect-nocgo: ${GOFILES}		
 	CGO_ENABLED=0 $(VGO) build -o ${BINARY_NAME}-nocgo -ldflags "-X main.buildDate=`date -u +\"%Y-%m-%dT%H:%M:%SZ\"` -X main.buildVersion=$(BUILD_VERSION)" -tags=prod -tags=prod -v
 firefly-fabconnect: ${GOFILES}
@@ -27,14 +27,14 @@ firefly-fabconnect: ${GOFILES}
 go-mod-tidy: .ALWAYS
 	go mod tidy
 docker:
-	docker build --build-arg BASE_IMAGE=alpine:3.19  --build-arg BUILD_IMAGE=golang:1.23-alpine3.19 -t hyperledger/firefly-fabconnect .
+	docker build --build-arg BASE_IMAGE=alpine:3.19  --build-arg BUILD_IMAGE=golang:1.23-alpine3.19 -t hyperledger-firefly/fabconnect .
 build: firefly-fabconnect-nocgo firefly-fabconnect
 .ALWAYS: ;
 clean: 
 	$(VGO) clean
 	rm -f *.so ${BINARY_NAME}
 builddeps:
-	$(VGO) get github.com/golangci/golangci-lint/cmd/golangci-lint@v1.55.2
+	$(VGO) get github.com/golangci/golangci-lint/v2/cmd/golangci-lint@v2.12.2
 deps: builddeps
 	$(VGO) get
 mockery: .ALWAYS

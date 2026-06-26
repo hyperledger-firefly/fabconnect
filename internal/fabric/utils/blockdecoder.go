@@ -27,7 +27,7 @@ import (
 	"github.com/hyperledger/fabric-protos-go/msp"
 	"github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/hyperledger/fabric-protos-go/peer/lifecycle"
-	"github.com/hyperledger/firefly-fabconnect/internal/events/api"
+	"github.com/hyperledger-firefly/fabconnect/internal/events/api"
 	"github.com/pkg/errors"
 )
 

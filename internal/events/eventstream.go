@@ -24,10 +24,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hyperledger/firefly-fabconnect/internal/auth"
-	"github.com/hyperledger/firefly-fabconnect/internal/errors"
-	eventsapi "github.com/hyperledger/firefly-fabconnect/internal/events/api"
-	"github.com/hyperledger/firefly-fabconnect/internal/ws"
+	"github.com/hyperledger-firefly/fabconnect/internal/auth"
+	"github.com/hyperledger-firefly/fabconnect/internal/errors"
+	eventsapi "github.com/hyperledger-firefly/fabconnect/internal/events/api"
+	"github.com/hyperledger-firefly/fabconnect/internal/ws"
 
 	lru "github.com/hashicorp/golang-lru"
 	log "github.com/sirupsen/logrus"

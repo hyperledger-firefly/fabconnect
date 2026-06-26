@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"sync"
 
-	"github.com/hyperledger/firefly-fabconnect/internal/events/api"
+	"github.com/hyperledger-firefly/fabconnect/internal/events/api"
 	log "github.com/sirupsen/logrus"
 )
 

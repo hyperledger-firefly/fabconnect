@@ -21,7 +21,7 @@ import (
 
 	"github.com/globalsign/mgo"
 	"github.com/globalsign/mgo/bson"
-	"github.com/hyperledger/firefly-fabconnect/internal/rest/test"
+	"github.com/hyperledger-firefly/fabconnect/internal/rest/test"
 	"github.com/stretchr/testify/assert"
 )
 

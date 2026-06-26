@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hyperledger/firefly-fabconnect/internal/fabric/test"
+	"github.com/hyperledger-firefly/fabconnect/internal/fabric/test"
 	"github.com/stretchr/testify/assert"
 )
 

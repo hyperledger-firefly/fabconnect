@@ -27,8 +27,8 @@ import (
 	"github.com/hyperledger/fabric-sdk-go/pkg/fab/events/deliverclient/seek"
 	"github.com/hyperledger/fabric-sdk-go/pkg/fab/events/service/blockfilter/headertypefilter"
 	"github.com/hyperledger/fabric-sdk-go/pkg/fabsdk"
-	"github.com/hyperledger/firefly-fabconnect/internal/errors"
-	eventsapi "github.com/hyperledger/firefly-fabconnect/internal/events/api"
+	"github.com/hyperledger-firefly/fabconnect/internal/errors"
+	eventsapi "github.com/hyperledger-firefly/fabconnect/internal/events/api"
 	log "github.com/sirupsen/logrus"
 )
 

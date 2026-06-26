@@ -3,7 +3,7 @@
 package mockfabric
 
 import (
-	client "github.com/hyperledger/firefly-fabconnect/internal/fabric/client"
+	client "github.com/hyperledger-firefly/fabconnect/internal/fabric/client"
 	mock "github.com/stretchr/testify/mock"
 
 	msp "github.com/hyperledger/fabric-sdk-go/pkg/common/providers/msp"

@@ -19,7 +19,7 @@ package tx
 import (
 	"context"
 
-	"github.com/hyperledger/firefly-fabconnect/internal/messages"
+	"github.com/hyperledger-firefly/fabconnect/internal/messages"
 )
 
 // Context is passed for each message that arrives at the bridge

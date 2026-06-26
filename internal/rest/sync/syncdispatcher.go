@@ -26,11 +26,11 @@ import (
 	"sync"
 	"time"
 
-	internalErrors "github.com/hyperledger/firefly-fabconnect/internal/errors"
-	"github.com/hyperledger/firefly-fabconnect/internal/messages"
-	restutil "github.com/hyperledger/firefly-fabconnect/internal/rest/utils"
-	"github.com/hyperledger/firefly-fabconnect/internal/tx"
-	"github.com/hyperledger/firefly-fabconnect/internal/utils"
+	internalErrors "github.com/hyperledger-firefly/fabconnect/internal/errors"
+	"github.com/hyperledger-firefly/fabconnect/internal/messages"
+	restutil "github.com/hyperledger-firefly/fabconnect/internal/rest/utils"
+	"github.com/hyperledger-firefly/fabconnect/internal/tx"
+	"github.com/hyperledger-firefly/fabconnect/internal/utils"
 	"github.com/julienschmidt/httprouter"
 
 	log "github.com/sirupsen/logrus"

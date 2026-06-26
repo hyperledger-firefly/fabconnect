@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/firefly-fabconnect/internal/rest/test"
-	mockkvstore "github.com/hyperledger/firefly-fabconnect/mocks/kvstore"
+	"github.com/hyperledger-firefly/fabconnect/internal/rest/test"
+	mockkvstore "github.com/hyperledger-firefly/fabconnect/mocks/kvstore"
 	"github.com/oklog/ulid/v2"
 	log "github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
