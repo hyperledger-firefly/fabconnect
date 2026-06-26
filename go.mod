@@ -1,6 +1,6 @@
 module github.com/hyperledger-firefly/fabconnect
 
-go 1.26.0
+go 1.26.4
 
 require (
 	github.com/Shopify/sarama v1.38.1
